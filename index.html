@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avanti</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,9 +16,9 @@
 
 </head>
 
-<body class="font-[Nunito Sans]">
+<body class="font-sans" style="font-family: 'Nunito Sans', sans-serif;">
     <header>
-        <div class="bg-[rgb(0,92,255)] text-white text-center p-1">
+        <div class="bg-[#005CFF] text-[#FFFFFF] text-center p-1">
             <p class="font-bold text-sm">Ganhe <span class="italic bg-indigo-600 p-1 rounded-sm">R$10,00</span> de
                 desconto
                 no seu
@@ -26,7 +27,7 @@
         </div>
     </header>
     <section class="ml-24 mr-56">
-        <div class="flex justify-between items-center bg-white p-6">
+        <div class="flex justify-between items-center bg-[#FFFFFF] p-6">
             <img src="./assets/logo-avanti.svg" alt="logo-avanti">
             <input type="text" placeholder="Digite aqui o que você procura"
                 class="border-2 border-gray-300 rounded-md px-6 py-3 w-[595px] bg-[url('/assets/lupa.svg')] bg-no-repeat bg-[length:20px] bg-[position:right_10px_center] placeholder-black placeholder-font-bold">
@@ -42,12 +43,11 @@
                     class="w-[25px] h-[25px]"><img src="./assets/compras-sacola.svg"
                     class="absolute -top-1 -right-1 w-4 h-4" alt="numero de compras"></a>
         </div>
-        <div>
-            <input type="checkbox" id="menu">
-            <label for="menu"></label>
+        <div class="relative">
+            <input type="checkbox" id="menu" class="peer hidden" /> <label for="menu"></label>
 
             <ul class="flex gap-11">
-                <li class="font-bold">Todas as Categorias</li>
+                <li class="cursor-pointer text-[#005CFF] font-bold">Todas as Categorias</li>
                 <li>Departamento</li>
                 <li>Departamento</li>
                 <li>Departamento</li>
@@ -59,8 +59,56 @@
 
             </ul>
         </div>
-
     </section>
+    <main>
+        <!-- Section SALE -->
+        <section class="bg-[#E7E7EA] flex items-center ">
+            <img src="./assets/cadeira.svg" alt="imagem cadeira com roupas" class=" pl-15">
+            <div class="items-center">
+                <img src="./assets/supersale.svg" alt="texto super sale">
+                <p style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"
+                    class="text-[#005CFF] font-bold text-2xl tracking-[0.5rem] text-center mt-3">ITENS
+                    SELECIONADOS COM
+                    ATÉ
+                    <br /><span class="text-6xl">50%OFF</span>
+                </p>
+            </div>
+        </section>
+        <!-- Section Lançamentos -->
+        <section class="mt-24">
+            <!-- Slider main container -->
+            <div class="swiper ">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide border-2 border-[#E7E7EA] rounded-lg p-4 flex flex-col">
+                        <span class="text-xs text-[#FFFFFF] bg-[#00264E] rounded-sm p-1">NOVO</span>
+                        <img src="./assets/anuncio.svg" alt="">
+                        <h3 class="text-[#303030]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+                        <p class="line-through text-[#303030]"> R$ 100,00</p>
+                        <p class="text-[#000000] font-bold">R$ 79,90</p>
+                        <p class="text-[#303030]">Ou em até <span class="font-bold">10x de R$ 7,90</span></p>
+                        <span class="bg-[#5EC0BE]  text-[#FFFFFF] underline rounded-sm  py-1 px-2"> 10% OFF</span>
+                        <button class="bg-[#005CFF] py-2 px-6 rounded-lg text-sm">Comprar</button>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
