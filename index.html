@@ -14,32 +14,33 @@
         rel="stylesheet">
 </head>
 
-<body class="font-sans" style="font-family: 'Nunito Sans', sans-serif;">
+<body class="w-full h-screen font-sans" style=" font-family: 'Nunito Sans' , sans-serif;">
     <header>
         <div class="bg-[#005CFF] text-[#FFFFFF] text-center p-1">
-            <p class="sm: font-bold text-sm">Ganhe <span class="italic bg-indigo-600 p-1 rounded-sm">R$10,00</span> de
-                desconto
-                no seu
-                primeiro pedido. Utilize o cupom <span class="font-normal italic">DESCONTO10</span>
+            <p class="font-bold text-sm">Ganhe <span class="italic bg-indigo-600 p-1 rounded-sm">R$10,00</span> de
+                desconto no seu primeiro pedido. Utilize o cupom <span class="font-normal italic">DESCONTO10</span>
             </p>
         </div>
     </header>
-    <section class="ml-24 mr-56 w-full">
+    <section class="container mx-autopx-4 w-full lg:ml-24 mr-56 ">
         <div class="flex justify-between items-center bg-[#FFFFFF] p-6">
+            <button class="lg:hidden block">
+                <img src="./assets/menu.svg" alt="Menu" class="w-6 h-6">
+            </button>
             <img src="./assets/logo-avanti.svg" alt="logo-avanti">
             <input type="text" placeholder="Digite aqui o que você procura"
-                class="border-2 border-gray-300 rounded-md px-6 py-3 w-[595px] bg-[url('/assets/lupa.svg')] bg-no-repeat bg-[length:20px] bg-[position:right_10px_center] placeholder-black placeholder-font-bold">
+                class="border-2 border-gray-300 rounded-md px-6 py-3 w-full max-w-[595px] bg-[url('/assets/lupa.svg')] bg-no-repeat bg-[length:20px] bg-[position:right_10px_center] placeholder-black placeholder-font-bold">
 
 
-            <a class="flex gap-2 items-center" href="#"><img src="/assets/usuario.svg" alt="usuario"
-                    class="w-[24px] h-[28px]">
+            <a class=" hidden md:flex gap-2 items-center" href="#"><img src="/assets/usuario.svg" alt="usuario"
+                    class="w-6 h-6">
                 <p class="text-sm font-semibold">Olá, <br>
                     Nome cliente!</p>
             </a>
 
-            <a href="#" class="relative inline-block"><img src="/assets/sacola.svg" alt="carrinho"
-                    class="w-[25px] h-[25px]"><img src="./assets/compras-sacola.svg"
-                    class="absolute -top-1 -right-1 w-4 h-4" alt="numero de compras"></a>
+            <a href="#" class="relative inline-block"><img src="/assets/sacola.svg" alt="carrinho" class="w-6 h-6"><img
+                    src="./assets/compras-sacola.svg" class="absolute -top-1 -right-1 w-4 h-4"
+                    alt="numero de compras"></a>
         </div>
         <div class="relative">
             <input type="checkbox" id="menu" class="peer hidden" /> <label for="menu"></label>
