@@ -74,7 +74,10 @@
         </section>
         <!-- Section Lançamentos -->
         <section class="w-auto">
-            <h2 class="text-xl font-bold mb-5 mt-24">Lançamentos</h2>
+            <div class="grid grid-cols-2 gap-4 items-center justify-center mb-5 mt-24 ">
+                <h2 class="text-xl font-bold">Lançamentos</h2>
+                <p class="text-sm font-bold">Ver mais</p>
+            </div>
 
             <!-- Slider main container -->
             <div class="swiper mx-auto max-w-[90%]">
@@ -269,24 +272,23 @@
             </p>
         </section>
     </main>
-    <footer>
-        <div>
-            <p class=" text-center font-bold text-xl mt-16 mb-6">Cadastre-se na nossa <span
-                    class="text-[#005CFF]">newsletter</span> </p>
-            <div class="bg-[#DEDEDE] gap-6 flex items-center justify-center h-44 px-28">
-                <input type="text" name="" id="" placeholder="Digite seu nome"
-                    class="bg-[#FFFFFF] pl-6 py-3 pr-20 rounded-lg">
-                <input type="email" name="" id="" placeholder="Digite seu e-mail"
-                    class="bg-[#FFFFFF] pl-6 py-3 pr-20 rounded-lg">
-                <div>
-                    <input type="checkbox" name="" id="">
-                    <label>Estou de acordo com a <span>Política de Privacidade</span></label>
-                </div>
-
-                <button class="bg-[#005CFF] text-[#FFFFFF] py-3 px-6 rounded-lg text-base font-bold">Cadastrar</button>
+    <section>
+        <h3 class=" text-center font-bold text-xl mt-16 mb-6">Cadastre-se na nossa <span
+                class="text-[#005CFF]">newsletter</span> </h3>
+        <form class="bg-[#DEDEDE] gap-6 flex items-center justify-center h-44 px-28">
+            <input type="text" name="" id="" placeholder="Digite seu nome"
+                class="bg-[#FFFFFF] pl-6 py-3 pr-20 rounded-lg">
+            <input type="email" name="" id="" placeholder="Digite seu e-mail"
+                class="bg-[#FFFFFF] pl-6 py-3 pr-20 rounded-lg">
+            <div>
+                <input type="checkbox" name="" id="">
+                <label>Estou de acordo com a <span>Política de Privacidade</span></label>
             </div>
-        </div>
+            <button class="bg-[#005CFF] text-[#FFFFFF] py-3 px-6 rounded-lg text-base font-bold">Cadastrar</button>
+        </form>
+    </section>
 
+    <footer>
         <section class="text-xs text-[#303030]">
             <div class="bg-[#F5F5F5] mt-10 pt-16 flex justify-around items-center pb-16">
                 <div>
